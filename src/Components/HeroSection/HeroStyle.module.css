@@ -1,0 +1,122 @@
+.heroHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 70px auto;
+    gap: 10px;
+}
+
+
+.heroDetails {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    gap: 50px;
+    padding-left: 70px;
+    /* text-align: justify; */
+}
+
+.heroDetails button {
+    font-size: 14px;
+    font-weight: 400;
+    width: max-content;
+    background: none;
+    border: solid 1px #C689C6;
+    color: #C689C6;
+    outline: none;
+    height: 40px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.heroDetails h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.heroDetails p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    width: 80%;
+    text-align: justify;
+}
+
+.heroDetails .btnViewBook {
+    width: max-content;
+    height: 45px;
+    outline: none;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 4px;
+    background-color: #937DC2;
+    color: white;
+    border-color: #937DC2;
+    cursor: pointer;
+    transition: 0.1s;
+    cursor: pointer;
+
+}
+
+.heroDetails .btnViewBook:hover {
+    background-color: #8a6ec5;
+    scale: 1.06;
+}
+
+
+.heroPicture {
+    width: 45%;
+    text-align: center;
+}
+
+
+/* -----------------------for response----------------------------------- */
+
+
+@media screen and (max-width:992px) {
+    .heroPicture img {
+        width: 250px;
+    }
+
+    .heroHead {
+        margin: 0 auto;
+        margin-top: 30px;
+        gap: 80px;
+    }
+
+    .heroDetails {
+        padding-left: 10px;
+        margin: 0 auto;
+        width: max-content;
+        text-align: center;
+    }
+
+    .heroDetails h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 22px;
+
+    }
+
+    .heroDetails p {
+        margin: 0 auto;
+    }
+
+    .heroPicture {
+        margin: 0 auto;
+        width: max-content;
+    }
+
+    .heroDetails .btnViewBook {
+        margin: 0 auto;
+
+    }
+
+}

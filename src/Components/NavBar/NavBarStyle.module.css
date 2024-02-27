@@ -1,0 +1,155 @@
+.NavHead {
+    width: 100%;
+    padding: 20px 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background: transparent;
+    box-shadow: 0px 8px 20px 0px rgb(193 192 192 / 26%);
+    z-index: 3;
+
+}
+
+
+.Logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 3px;
+    right: 42%;
+
+}
+
+.imgIcon {
+    position: absolute;
+    width: 12px;
+
+}
+
+.ul {
+    flex: 1;
+    text-align: center;
+    list-style: none;
+}
+
+
+
+.ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #222;
+    cursor: pointer;
+}
+
+
+
+.ul li:hover {
+    color: #7555bb;
+}
+
+.Darkbtn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.togglebtn {
+    background: 0;
+    border: none;
+    display: none;
+    font-size: 25px;
+    color: #7256b1;
+}
+
+.Navmobile {
+    display: none;
+    list-style: none;
+}
+
+.switchdiv {
+    display: none;
+}
+
+
+
+/* ----------------------------For--Response---------------------------------- */
+
+@media screen and (max-width:992px) {
+
+    .ul,
+    .Darkbtn,
+    .ulDark li {
+        display: none;
+    }
+
+    .togglebtn {
+        display: block;
+    }
+
+    .Navmobile {
+        display: block;
+        position: absolute;
+        top: 70px;
+        right: 12px;
+        width: 50%;
+        height: max-content;
+        background-color: #bfaced81;
+        backdrop-filter: blur(3px);
+        border: solid 2px rgba(220, 217, 217, 0.315);
+        border-top: none;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        overflow: hidden;
+        text-align: center;
+        z-index: 0;
+
+    }
+
+    .ulmobile li {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        font-size: 12px;
+        font-weight: bold;
+        width: 80%;
+        margin: 0 auto;
+        color: #222;
+    }
+
+
+    .ulmobile li:hover {
+        color: #9785bd;
+    }
+
+    .switchdiv {
+        margin: 0 auto;
+        padding: 0px 7px;
+        display: block;
+    }
+
+    .describe {
+        margin-bottom: 5px;
+        display: block;
+        font-size: 12px;
+        font-weight: bold;
+        /* color: white; */
+    }
+
+    
+
+}

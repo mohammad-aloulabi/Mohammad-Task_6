@@ -1,0 +1,165 @@
+.BookApi {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 70px auto;
+    gap: 40px;
+    padding: 0 50px;
+}
+
+.imageApi {
+    width: 40%;
+    margin: 0 auto;
+    width: max-content;
+}
+
+.imageApi .imageApiImage {
+    width: 100%;
+}
+
+
+/* ------------------------second side------------------------- */
+
+.BookDetailsApi {
+    width: 45%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.BookDetailsApi .BookName {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.BookDetailsApi .BookArthur {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.BookDetailsApi .BookDescription {
+    text-align: justify;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    /* width: 691.247px; */
+    /* height: 143.253px; */
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.BookDetailsApi .circleBtns {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.BookDetailsApi .OptionsBook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+    text-align: center;
+}
+
+.BookDetailsApi .Add_Fav {
+    width: 300px;
+    padding: 12px 70px;
+    height: 47px;
+    padding: 12px 70px;
+    color: #937DC2;
+    border: #937DC2 1px solid;
+    background-color: #fff;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s;
+}
+
+.BookDetailsApi .Add_Fav:hover {
+    scale: 1.03;
+    background-color: #937DC2;
+    color: #fff;
+
+}
+
+.NumberRatingReviw {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.PageNumber,
+.BookRating,
+.Reviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: max-content;
+
+}
+
+.PagesNumberTitle,
+.BookRatingTitle,
+.ReviewsTitle {
+
+    color: #937DC2;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.033px;
+}
+
+/* -------------------------for response----------------------- */
+
+@media screen and (max-width:992px) {
+
+
+    .BookApi .imageApi {
+        margin: 0 auto;
+    }
+
+    .BookDetailsApi {
+        margin: 0 auto;
+        text-align: center;
+        width: max-content;
+    }
+
+    .BookDetailsApi .BookName {
+        font-size: 20px;
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    .BookDetailsApi .BookDescription {
+        width: 250px;
+        margin: 0 auto;
+        width: 250px;
+    }
+
+    .BookDetailsApi .circleBtns,
+    .NumberRatingReviw {
+        margin: 0 auto;
+    }
+
+    .BookDetailsApi .OptionsBook {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .BookDetailsApi .Add_Fav {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}

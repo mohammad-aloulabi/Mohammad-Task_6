@@ -1,0 +1,107 @@
+.LocationContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    padding: 0 40px;
+}
+
+.AboutUs {
+    width: 45%;
+}
+
+.AboutUs h1 {
+    font-size: 39px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.AboutUs p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.033px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.AboutUs form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.AboutUs input {
+    border: none;
+    border-bottom: 1px solid #937DC2;
+    margin-bottom: 15px;
+}
+
+.AboutUs .SubscribeBtn {
+    padding: 12.017px 32.044px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
+    background-color: #937DC2;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.AboutUs .SubscribeBtn:hover {
+    scale: 1.01;
+    background-color: #7b5ac1;
+}
+
+.Map {
+    width: 45%;
+    cursor: pointer;
+}
+
+.Map iframe {
+    width: 100%;
+}
+
+
+/* ----------------------------------for response--------------------------------------- */
+
+@media screen and (max-width:992px) {
+    .AboutUs {
+        margin: 0 auto;
+        text-align: center;
+        width: max-content;
+        margin-bottom: 20px;
+    }
+
+    .AboutUs h1 {
+        font-size: 21px;
+        width: max-content;
+    }
+
+    .AboutUs p {
+        margin: 0 auto;
+        width: 200px;
+        margin-bottom: 30px;
+    }
+
+    .AboutUs input {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .AboutUs .SubscribeBtn {
+        width: 90%;
+        line-height: 10px;
+        font-size: 12px;
+        margin: 0 auto;
+    }
+
+    .Map {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
